@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBS SPARK 2.0 - Career & Management Session</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #0B0F19;
+            color: #F3F4F6;
+        }
+
+        .bg-glow {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.35) 0%, rgba(59, 130, 246, 0.15) 50%, rgba(0,0,0,0) 80%);
+            filter: blur(60px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.8));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(168, 85, 247, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .badge-pill {
+            background: rgba(168, 85, 247, 0.12);
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            color: #D8B4FE;
+        }
+
+        .neon-cta {
+            background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+            box-shadow: 0 8px 25px -5px rgba(168, 85, 247, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .neon-cta:hover {
+            box-shadow: 0 12px 30px -3px rgba(168, 85, 247, 0.7);
+            transform: translateY(-2px);
+        }
+
+        .timer-box {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen pb-12 flex flex-col items-center justify-center p-4 sm:p-6 overflow-x-hidden">
+
+    <!-- Subtle Background Glow Effect -->
+    <div class="bg-glow"></div>
+
+    <div class="relative z-10 max-w-xl w-full space-y-5">
+        
+        <!-- Header Banner -->
+        <div class="text-center space-y-3 pt-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-pill text-xs font-bold tracking-wider uppercase">
+                <i class="fas fa-sparkles"></i> IBS Rajasthan Event
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                IBS SPARK <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">2.0</span>
+            </h1>
+            
+            <p class="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-md mx-auto">
+                Career & Management Session — Direct interaction with IBS experts, CAT/IBSAT preparation roadmap & 1-on-1 counseling.
+            </p>
+        </div>
+
+        <!-- Key Information Card -->
+        <div class="hero-card rounded-2xl p-5 space-y-3">
+            <div class="flex items-center gap-3.5 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Date</p>
+                    <p class="text-sm font-bold text-white">Thursday, 15 October 2026</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3.5 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+                    <i class="far fa-clock"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Timing</p>
+                    <p class="text-sm font-bold text-white">10:00 AM – 5:00 PM (Flexible Slots)</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-3 rounded-xl bg-white/5 border border-white/5">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0 mt-0.5">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                    <p class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Venues Across Rajasthan</p>
+                    <div class="flex flex-wrap gap-1.5 mt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Jaipur</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Udaipur</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Kota</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Bhilwara</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Ajmer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Highlights Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="feature-card rounded-xl p-4 text-center space-y-2">
+                <div class="w-9 h-9 mx-auto rounded-full bg-purple-500/10 text-purple-400 flex items-center justify-center text-base">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <h3 class="text-xs font-bold text-white">1-on-1 Counselling</h3>
+                <p class="text-[11px] text-gray-400 leading-snug">Personal profile evaluation & career mapping.</p>
+            </div>
+
+            <div class="feature-card rounded-xl p-4 text-center space-y-2">
+                <div class="w-9 h-9 mx-auto rounded-full bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-base">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <h3 class="text-xs font-bold text-white">CAT/IBSAT Strategy</h3>
+                <p class="text-[11px] text-gray-400 leading-snug">Preparation roadmap & exam strategy.</p>
+            </div>
+
+            <div class="feature-card rounded-xl p-4 text-center space-y-2">
+                <div class="w-9 h-9 mx-auto rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center text-base">
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+                <h3 class="text-xs font-bold text-white">Refreshments</h3>
+                <p class="text-[11px] text-gray-400 leading-snug">Complimentary snacks for all attendees.</p>
+            </div>
+        </div>
+
+        <!-- Countdown Timer Card -->
+        <div class="hero-card rounded-2xl p-5 text-center space-y-3">
+            <p class="text-[11px] font-extrabold tracking-widest text-purple-300 uppercase">Event Countdown</p>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="timer-box rounded-xl p-2.5">
+                    <span id="days" class="block text-xl sm:text-2xl font-black text-white">00</span>
+                    <span class="text-[9px] uppercase font-bold text-gray-400">Days</span>
+                </div>
+                <div class="timer-box rounded-xl p-2.5">
+                    <span id="hours" class="block text-xl sm:text-2xl font-black text-white">00</span>
+                    <span class="text-[9px] uppercase font-bold text-gray-400">Hours</span>
+                </div>
+                <div class="timer-box rounded-xl p-2.5">
+                    <span id="minutes" class="block text-xl sm:text-2xl font-black text-white">00</span>
+                    <span class="text-[9px] uppercase font-bold text-gray-400">Mins</span>
+                </div>
+                <div class="timer-box rounded-xl p-2.5">
+                    <span id="seconds" class="block text-xl sm:text-2xl font-black text-white">00</span>
+                    <span class="text-[9px] uppercase font-bold text-gray-400">Secs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action / Registration Button -->
+        <div class="pt-2 text-center space-y-2">
+            <a href="https://forms.gle/xi3viW7XvhkhXiJYA" target="_blank" rel="noopener noreferrer" class="neon-cta block w-full py-4 rounded-xl text-center text-sm font-extrabold uppercase tracking-wider text-white">
+                Register Free Now <i class="fas fa-arrow-right ml-1.5"></i>
+            </a>
+            <p class="text-[11px] text-gray-400">Limited seats available • Flexible slots between 10 AM to 5 PM</p>
+        </div>
+
+    </div>
+
+    <script>
+        const targetDate = new Date('October 15, 2026 10:00:00').getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = String(days).padStart(2, '0');
+                document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('days').innerText = "00";
+                document.getElementById('hours').innerText = "00";
+                document.getElementById('minutes').innerText = "00";
+                document.getElementById('seconds').innerText = "00";
+            }
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+</html>
