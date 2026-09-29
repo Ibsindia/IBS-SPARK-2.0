@@ -1,11 +1,4 @@
-Aap interactive canvas preview me dekhenge toh poori index.html file ban kar taiyar hai.
-Aap is file ko 2 aasan tareekon se le sakte hain:
-Tareeka 1: Direct Download (Subse Aasan)
-Upar screen par jo visual interface / website preview dikh raha hai:
- * Uske top right corner me aapko < / > Code icon ya Download button dikhega.
- * Us par click karke aap direct index.html file apne mobile/laptop me download kar sakte hain.
-Tareeka 2: Copy-Paste Code
-Agar aap direct copy karke GitHub ya Notepad me save karna chahte hain, toh niche diye gaye poore code ko copy karke index.html naam se save kar lijiye:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +17,7 @@ Agar aap direct copy karke GitHub ya Notepad me save karna chahte hain, toh nich
         .glass-card {
             background: rgba(255, 255, 255, 0.07);
             backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 1rem;
         }
@@ -40,7 +34,7 @@ Agar aap direct copy karke GitHub ya Notepad me save karna chahte hain, toh nich
         }
     </style>
 </head>
-<body class="p-4 md:p-8 flex flex-col items-center justify-center">
+<body class="p-4 md:p-8 flex flex-col items-center justify-center min-h-screen">
 
     <div class="max-w-2xl w-full space-y-6">
         
@@ -139,7 +133,7 @@ Agar aap direct copy karke GitHub ya Notepad me save karna chahte hain, toh nich
             <p class="text-lg font-bold">Registration Free</p>
             <p class="text-xs text-gray-300">Seats are limited. Register now for IBS SPARK 2.0.</p>
             
-            <a href="https://forms.gle/xi3viW7XvhkhXiJYA" target="_blank" class="neon-btn block w-full py-4 rounded-xl text-center text-lg uppercase tracking-wide">
+            <a href="https://forms.gle/xi3viW7XvhkhXiJYA" target="_blank" rel="noopener noreferrer" class="neon-btn block w-full py-4 rounded-xl text-center text-lg uppercase tracking-wide cursor-pointer">
                 Register / Know More <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
