@@ -1,0 +1,180 @@
+Aap interactive canvas preview me dekhenge toh poori index.html file ban kar taiyar hai.
+Aap is file ko 2 aasan tareekon se le sakte hain:
+Tareeka 1: Direct Download (Subse Aasan)
+Upar screen par jo visual interface / website preview dikh raha hai:
+ * Uske top right corner me aapko < / > Code icon ya Download button dikhega.
+ * Us par click karke aap direct index.html file apne mobile/laptop me download kar sakte hain.
+Tareeka 2: Copy-Paste Code
+Agar aap direct copy karke GitHub ya Notepad me save karna chahte hain, toh niche diye gaye poore code ko copy karke index.html naam se save kar lijiye:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBS SPARK 2.0 - Career & Management Session</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #10002b 0%, #240046 35%, #3c096c 70%, #5a189a 100%);
+            min-height: 100vh;
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 1rem;
+        }
+        .neon-btn {
+            background-color: #CCFF00;
+            color: #10002b;
+            font-weight: 800;
+            transition: all 0.3s ease;
+        }
+        .neon-btn:hover {
+            background-color: #b3ea00;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(204, 255, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 flex flex-col items-center justify-center">
+
+    <div class="max-w-2xl w-full space-y-6">
+        
+        <!-- Header Section -->
+        <div class="text-center space-y-2">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+                IBS SPARK 2.0
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold text-[#CCFF00]">
+                Career & Management Session
+            </p>
+            <p class="text-gray-300 text-sm md:text-base px-2">
+                Your next step towards MBA — career guidance, CAT/IBSAT roadmap, and direct interaction with IBS experts across Rajasthan!
+            </p>
+        </div>
+
+        <!-- Details Badges -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm font-medium">
+            <div class="glass-card p-3 flex items-center gap-3">
+                <i class="far fa-calendar-alt text-[#CCFF00] text-lg"></i>
+                <span>Thu, 15 Oct 2026</span>
+            </div>
+            <div class="glass-card p-3 flex items-center gap-3">
+                <i class="fas fa-clock text-[#CCFF00] text-lg"></i>
+                <span>10:00 AM – 5:00 PM (Multiple Slots)</span>
+            </div>
+            <div class="glass-card p-3 flex items-center gap-3 md:col-span-2">
+                <i class="fas fa-map-marker-alt text-[#CCFF00] text-lg"></i>
+                <span>Across Rajasthan: Jaipur, Udaipur, Kota, Bhilwara, Ajmer</span>
+            </div>
+        </div>
+
+        <!-- Flexible Slots Notice -->
+        <div class="glass-card p-4 border-l-4 border-[#CCFF00]">
+            <div class="flex items-center gap-2 text-[#CCFF00] font-bold text-sm">
+                <i class="fas fa-user-clock"></i>
+                <span>Flexible Time Slots Available</span>
+            </div>
+            <p class="text-xs text-gray-300 mt-1">
+                Sessions are running in multiple slots between 10:00 AM to 5:00 PM. Students can join any slot as per their convenience!
+            </p>
+        </div>
+
+        <!-- Topics Covered -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="glass-card p-4 space-y-2">
+                <div class="flex items-center gap-2 text-[#CCFF00] font-bold">
+                    <i class="fas fa-comments"></i>
+                    <h3>One-to-One Counselling</h3>
+                </div>
+                <p class="text-xs text-gray-300">Personalized expert guidance for MBA, career planning, and profile evaluation.</p>
+            </div>
+
+            <div class="glass-card p-4 space-y-2">
+                <div class="flex items-center gap-2 text-[#CCFF00] font-bold">
+                    <i class="fas fa-map-signs"></i>
+                    <h3>CAT / IBSAT Roadmap</h3>
+                </div>
+                <p class="text-xs text-gray-300">Complete preparation strategy, exam insights, cutoffs, and attempt roadmap.</p>
+            </div>
+
+            <div class="glass-card p-4 space-y-2">
+                <div class="flex items-center gap-2 text-[#CCFF00] font-bold">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Refreshments</h3>
+                </div>
+                <p class="text-xs text-gray-300">Complimentary refreshments provided for all registered candidates during sessions.</p>
+            </div>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="glass-card p-6 text-center space-y-4">
+            <p class="text-xs font-bold tracking-widest text-gray-300 uppercase">Session Starts In</p>
+            <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="bg-black/30 rounded-lg p-2">
+                    <span id="days" class="text-2xl md:text-4xl font-extrabold text-[#CCFF00]">00</span>
+                    <p class="text-[10px] text-gray-400 uppercase">Days</p>
+                </div>
+                <div class="bg-black/30 rounded-lg p-2">
+                    <span id="hours" class="text-2xl md:text-4xl font-extrabold text-[#CCFF00]">00</span>
+                    <p class="text-[10px] text-gray-400 uppercase">Hours</p>
+                </div>
+                <div class="bg-black/30 rounded-lg p-2">
+                    <span id="minutes" class="text-2xl md:text-4xl font-extrabold text-[#CCFF00]">00</span>
+                    <p class="text-[10px] text-gray-400 uppercase">Minutes</p>
+                </div>
+                <div class="bg-black/30 rounded-lg p-2">
+                    <span id="seconds" class="text-2xl md:text-4xl font-extrabold text-[#CCFF00]">00</span>
+                    <p class="text-[10px] text-gray-400 uppercase">Seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call To Action -->
+        <div class="text-center space-y-3">
+            <p class="text-lg font-bold">Registration Free</p>
+            <p class="text-xs text-gray-300">Seats are limited. Register now for IBS SPARK 2.0.</p>
+            
+            <a href="https://forms.gle/xi3viW7XvhkhXiJYA" target="_blank" class="neon-btn block w-full py-4 rounded-xl text-center text-lg uppercase tracking-wide">
+                Register / Know More <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        // Target Date: 15 October 2026, 10:00 AM
+        const targetDate = new Date('October 15, 2026 10:00:00').getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = String(days).padStart(2, '0');
+                document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('days').innerText = "00";
+                document.getElementById('hours').innerText = "00";
+                document.getElementById('minutes').innerText = "00";
+                document.getElementById('seconds').innerText = "00";
+            }
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+</html>
+
